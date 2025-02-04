@@ -18,7 +18,7 @@ void configurar_pwm(uint gpio) {
     pwm_set_enabled(slice_num, true);
 }
 
-// Função para definir a intensidade do LED e gerar um amarelo equilibrado
+// Função para definir a intensidade do LED
 void set_pwm_duty(uint gpio, uint8_t duty) {
     uint slice_num = pwm_gpio_to_slice_num(gpio);
     uint channel = pwm_gpio_to_channel(gpio); 
